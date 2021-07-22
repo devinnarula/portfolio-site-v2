@@ -2,7 +2,7 @@ import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
@@ -10,7 +10,7 @@ const Navbar = () => {
                     <NavLogo to='/'>
                         Devin
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <RiMenu3Fill />
                     </MobileIcon>
                     <NavMenu>
