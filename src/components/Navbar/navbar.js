@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
-import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavLogo, NavImg, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
+import Logo from '../../images/Logo.png'
 
 const Navbar = ({toggle}) => {
     return (
@@ -8,7 +9,7 @@ const Navbar = ({toggle}) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        Devin
+                        <NavImg src={Logo} alt="Logo"/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <RiMenu3Fill />

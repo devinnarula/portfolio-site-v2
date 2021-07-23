@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
 
 export const StartContainer = styled.div`
     background: #1f2833;
@@ -7,7 +8,6 @@ export const StartContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 600px;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -51,7 +51,6 @@ export const StartTitleGreeting = styled.h1`
     color: #c5c6c7;
     font-size: 48px;
     text-align: center;
-    margin-right: 12px;
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -62,18 +61,12 @@ export const StartTitleGreeting = styled.h1`
     }
 `;
 
-export const StartTitleName = styled.h1`
+export const WhiteWord = styled.span`
     color: #fff;
-    font-size: 48px;
-    text-align: center;
+`;
 
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
+export const BlueWord = styled.span`
+    color: #66fcf1;
 `;
 
 export const StartSubTitle = styled.h1`
@@ -110,9 +103,55 @@ export const StartSummary = styled.p`
 export const StartImg = styled.img`
     width: 75%;
     border-radius: 50%;
+    border: 2px solid #66fcf1;
 
     @media screen and (max-width: 800px) {
         height: 75%;
-        width: auto;
+        margin: 10px;
+    }
+`;
+
+export const StartLinks = styled.div`
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+`;
+
+export const StartLink = styled(LinkR)`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 170px;
+    border-radius: 20px;
+    white-space: nowrap;
+    padding: 3px 22px;
+    border: 2px solid #c5c6c7;
+    /* background: #0b0c10; */
+    color: #c5c6c7;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        border: 3px solid #66fcf1;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 140px;
+        font-size: 16px;
+    }
+`;
+
+export const MediaIcon = styled.div`
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
     }
 `;
