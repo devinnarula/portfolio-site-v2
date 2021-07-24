@@ -11,6 +11,7 @@ export const StartContainer = styled.div`
     width: 100%;
     position: relative;
     z-index: 1;
+    margin-bottom: 15%;
 `;
 
 export const StartText = styled.div`
@@ -127,8 +128,7 @@ export const StartLink = styled(LinkR)`
     border-radius: 20px;
     white-space: nowrap;
     padding: 3px 22px;
-    border: 2px solid #c5c6c7;
-    /* background: #0b0c10; */
+    border: 2px solid #45A29E;
     color: #c5c6c7;
     font-size: 18px;
     cursor: pointer;
@@ -150,7 +150,7 @@ export const MediaIcon = styled.div`
     font-size: 40px;
     margin-top: 5px;
     margin-right: 10px;
-
+    
     @media screen and (max-width: 768px) {
         font-size: 20px;
     }
