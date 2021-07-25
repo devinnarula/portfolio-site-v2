@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
 export const StartContainer = styled.div`
-    background: #1f2833;
+    background: ${props => props.theme.background};
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,7 +49,7 @@ export const StartTitleContainer = styled.div`
 `;
 
 export const StartTitleGreeting = styled.h1`
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 48px;
     text-align: center;
 
@@ -67,12 +67,12 @@ export const WhiteWord = styled.span`
 `;
 
 export const BlueWord = styled.span`
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
 `;
 
 export const StartSubTitle = styled.h1`
     align-self: flex-start;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 44px;
     text-align: center;
 
@@ -87,7 +87,7 @@ export const StartSubTitle = styled.h1`
 
 export const StartSummary = styled.p`
     align-self: flex-start;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 20px;
     text-align: start;
     max-width: 680px;
@@ -129,7 +129,7 @@ export const StartLink = styled(LinkR)`
     white-space: nowrap;
     padding: 3px 22px;
     border: 2px solid #45A29E;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 18px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

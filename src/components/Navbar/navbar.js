@@ -3,7 +3,7 @@ import { RiMenu3Fill } from 'react-icons/ri'
 import {Nav, NavLogo, NavImg, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
 import Logo from '../../images/Logo.png'
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggleOpen}) => {
     return (
         <>
             <Nav>
@@ -11,7 +11,7 @@ const Navbar = ({toggle}) => {
                     <NavLogo to='/'>
                         <NavImg src={Logo} alt="Logo"/>
                     </NavLogo>
-                    <MobileIcon onClick={toggle}>
+                    <MobileIcon onClick={toggleOpen}>
                         <RiMenu3Fill />
                     </MobileIcon>
                     <NavMenu>

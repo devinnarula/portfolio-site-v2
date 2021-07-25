@@ -2,9 +2,12 @@ import React from 'react'
 import { StartContainer, StartText, StartImgContainer, StartImg, StartTitleContainer, StartTitleGreeting, WhiteWord, BlueWord, StartSubTitle, StartSummary, StartLinks, StartLink, MediaIcon } from './StartElements'
 import { GrGithub, GrLinkedin, GrInstagram, GrFacebook } from 'react-icons/gr'
 import Profile from '../../images/Profile.jpg'
+import { ThemeProvider } from 'styled-components'
 
-const Start = () => {
+const Start = ({colorScheme}) => {
+    console.log(colorScheme)
     return (
+        <ThemeProvider theme={colorScheme}>
         <StartContainer>
             <StartImgContainer>
                 <StartImg src={Profile} alt="Profile Picture"/>
@@ -33,6 +36,7 @@ const Start = () => {
                 </StartLinks>
             </StartText>
         </StartContainer>
+        </ThemeProvider>
     )
 }
 
