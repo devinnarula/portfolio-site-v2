@@ -23,14 +23,14 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggleOpen={toggleOpen}/>
-            <Navbar toggleOpen={toggleOpen}/>
+            <Sidebar colorScheme={colorScheme} isOpen={isOpen} toggleOpen={toggleOpen}/>
+            <Navbar colorScheme={colorScheme} toggleOpen={toggleOpen}/>
             <Start colorScheme={colorScheme}/>
-            <About id='about'/>
-            <Experience id='experience'/>
-            <Projects id='projects'/>
-            <Contact id='contact'/>
-            <Footer/>
+            <About colorScheme={colorScheme} id='about'/>
+            <Experience colorScheme={colorScheme} id='experience'/>
+            <Projects colorScheme={colorScheme} id='projects'/>
+            <Contact colorScheme={colorScheme} id='contact'/>
+            <Footer colorScheme={colorScheme}/>
         </>
     )
 }

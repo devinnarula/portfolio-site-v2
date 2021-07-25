@@ -1,15 +1,18 @@
 import React from 'react'
 import { ContactContainer, ContactText, ContactTitle, ContactTitleName, ContactSectionLine } from './ContactElements'
+import { ThemeProvider } from 'styled-components'
 
-const Contact = ({id}) => {
+const Contact = ({colorScheme, id}) => {
     return (
-        <ContactContainer id={id}>
-            <ContactText>
-                <ContactTitle>
-                    <ContactSectionLine/><ContactTitleName>Contact</ContactTitleName>
-                </ContactTitle>
-            </ContactText>
-        </ContactContainer>
+        <ThemeProvider theme={colorScheme}>
+            <ContactContainer id={id}>
+                <ContactText>
+                    <ContactTitle>
+                        <ContactSectionLine/><ContactTitleName>Contact</ContactTitleName>
+                    </ContactTitle>
+                </ContactText>
+            </ContactContainer>
+        </ThemeProvider>
     )
 }
 

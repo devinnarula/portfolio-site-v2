@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
-    background: #1f2833;
+    background: ${props => props.theme.background};
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@ export const ProjectsTitle = styled.div`
 
 export const ProjectsTitleName = styled.h1`
     font-size: 40px;
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
     margin-right: 50px;
 
     @media screen and (max-width: 768px) {

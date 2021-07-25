@@ -1,15 +1,19 @@
 import React from 'react'
 import { ExperienceContainer, ExperienceDateLocation, ExperienceStatementList, ExperienceStatement } from './ExperienceInfoElements'
-const ExperienceInfo = ({dateLocation, statements}) => {
+import { ThemeProvider } from 'styled-components'
+
+const ExperienceInfo = ({colorScheme, dateLocation, statements}) => {
     return (
-        <ExperienceContainer>
-            <ExperienceDateLocation>{dateLocation}</ExperienceDateLocation>
-            <ExperienceStatementList>
-                {statements.map((s) => (
-                    <ExperienceStatement>{s}</ExperienceStatement>
-                ))}
-            </ExperienceStatementList>
-        </ExperienceContainer>
+        <ThemeProvider theme={colorScheme}>
+            <ExperienceContainer>
+                <ExperienceDateLocation>{dateLocation}</ExperienceDateLocation>
+                <ExperienceStatementList>
+                    {statements.map((s) => (
+                        <ExperienceStatement>{s}</ExperienceStatement>
+                    ))}
+                </ExperienceStatementList>
+            </ExperienceContainer>
+        </ThemeProvider>
     )
 }
 

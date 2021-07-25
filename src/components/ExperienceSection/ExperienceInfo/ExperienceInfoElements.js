@@ -30,11 +30,11 @@ export const ExperienceStatementList = styled.ul`
 
 export const ExperienceStatement = styled.li`
     font-size: 20px;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
 
     &::before {
         content: "▻ ";
-        color: #66fcf1;
+        color: ${props => props.theme.bold};
     }
     
     @media screen and (max-width: 800px) {

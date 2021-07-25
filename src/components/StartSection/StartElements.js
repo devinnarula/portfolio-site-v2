@@ -104,7 +104,7 @@ export const StartSummary = styled.p`
 export const StartImg = styled.img`
     width: 75%;
     border-radius: 50%;
-    border: 2px solid #66fcf1;
+    border: 2px solid ${props => props.theme.bold};
 
     @media screen and (max-width: 800px) {
         height: 75%;
@@ -128,7 +128,7 @@ export const StartLink = styled(LinkR)`
     border-radius: 20px;
     white-space: nowrap;
     padding: 3px 22px;
-    border: 2px solid #45A29E;
+    border: 2px solid ${props => props.theme.link};
     color: ${props => props.theme.maintext};
     font-size: 18px;
     cursor: pointer;
@@ -137,7 +137,7 @@ export const StartLink = styled(LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        border: 3px solid #66fcf1;
+        border: 3px solid ${props => props.theme.bold};
     }
 
     @media screen and (max-width: 768px) {

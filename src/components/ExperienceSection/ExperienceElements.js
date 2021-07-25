@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ExperienceContainer = styled.div`
-    background: #1f2833;
+    background: ${props => props.theme.background};
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ export const ExperienceTitle = styled.div`
 
 export const ExperienceTitleName = styled.h1`
     font-size: 40px;
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
     margin-left: 50px;
 
     @media screen and (max-width: 800px) {
@@ -67,9 +67,10 @@ export const ExperienceCompany = styled.button`
     border-radius: 20px;
     white-space: nowrap;
     padding: 10px 22px;
-    border: ${(props) => props.active ? '3px solid #66fcf1' : '2px solid #45A29E'};
-    color: #c5c6c7;
-    background: #1f2833;
+    border: ${(props) => props.active ? '3px solid' : '2px solid'};
+    border-color: ${(props) => props.active ? props.theme.bold : props.theme.link};
+    color: ${props => props.theme.maintext};
+    background: ${props => props.theme.background};
     font-size: 18px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -77,7 +78,8 @@ export const ExperienceCompany = styled.button`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        border: ${(props) => props.active ? '3px solid #66fcf1' : '3px solid #45A29E'};
+        border: 3px solid;
+        border-color: ${(props) => props.active ? props.theme.bold : props.theme.link};
     }
 
     @media screen and (max-width: 800px) {
@@ -88,7 +90,7 @@ export const ExperienceCompany = styled.button`
 
 
 export const CompanyDetails = styled.div`
-    background: #1f2833;
+    background: ${props => props.theme.background};
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -116,7 +118,7 @@ export const CompanyText = styled.div`
 
 export const CompanyTitle = styled.h1`
     font-size: 40px;
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
     margin-bottom: 8px;
 
     @media screen and (max-width: 800px) {
@@ -139,7 +141,7 @@ export const CompanyImgContainer = styled.div`
 export const CompanyImg = styled.img`
     width: 75%;
     border-radius: 50%;
-    border: 2px solid #66fcf1;
+    border: 2px solid ${props => props.theme.bold};
     background-color: transparent;
 
     @media screen and (max-width: 800px) {

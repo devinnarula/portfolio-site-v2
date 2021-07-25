@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
  z-index: 999;
  width: 100%;
  height: 100%;
- background: #0b0c10;
+ background: ${props => props.theme.border};
  display: grid;
  align-items: center;
  top: 0;
@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-    color: #c5c6c7
+    color: ${props => props.theme.maintext}
 `;
 
 export const SidebarMenu = styled.ul`
@@ -56,7 +56,7 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     cursor: pointer;
 
     &:hover {
@@ -72,10 +72,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    border: 2px solid #45A29E;
+    border: 2px solid ${props => props.theme.link};
     white-space: nowrap;
     padding: 16px 64px;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

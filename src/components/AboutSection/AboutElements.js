@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    background: #1f2833;
+    background: ${props => props.theme.background};
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@ export const AboutTitle = styled.div`
 
 export const AboutTitleName = styled.h1`
     font-size: 40px;
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
     margin-right: 50px;
 
     @media screen and (max-width: 768px) {
@@ -49,7 +49,7 @@ export const AboutSectionLine = styled.hr`
 export const AboutParagraph = styled.p`
     margin: 15px;
     align-self: center;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
     font-size: 20px;
     text-align: start;
     max-width: 680px;
@@ -76,7 +76,7 @@ export const AboutSkills = styled.div`
 
 export const AboutSkillTitle = styled.h1`
     font-size: 25px;
-    color: #66fcf1;
+    color: ${props => props.theme.bold};
     margin-bottom: 10px;
 
     @media screen and (max-width: 768px) {
@@ -93,9 +93,9 @@ export const AboutSkill = styled.div`
     border-radius: 20px;
     white-space: nowrap;
     padding: 3px 22px;
-    border: 2px solid #c5c6c7;
-    /* background: #0b0c10; */
-    color: #c5c6c7;
+    border: 2px solid ${props => props.theme.maintext};
+    /* background: ${props => props.theme.border}; */
+    color: ${props => props.theme.maintext};
     font-size: 16px;
     text-decoration: none;
 

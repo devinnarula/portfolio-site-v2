@@ -12,5 +12,5 @@ export const FooterContainer = styled.nav`
 
 export const FooterText = styled.h1`
     font-size: 15px;
-    color: #c5c6c7;
+    color: ${props => props.theme.maintext};
 `;

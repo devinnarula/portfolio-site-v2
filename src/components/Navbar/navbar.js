@@ -2,10 +2,12 @@ import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import {Nav, NavLogo, NavImg, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
 import Logo from '../../images/Logo.png'
+import { ThemeProvider } from 'styled-components'
 
-const Navbar = ({toggleOpen}) => {
+const Navbar = ({colorScheme, toggleOpen}) => {
     return (
         <>
+        <ThemeProvider theme={colorScheme}>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
@@ -33,6 +35,7 @@ const Navbar = ({toggleOpen}) => {
                     </NavMenu>
                 </NavbarContainer>
             </Nav>
+        </ThemeProvider>
         </>
     )
 }
