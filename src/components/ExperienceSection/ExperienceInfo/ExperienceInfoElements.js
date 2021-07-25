@@ -35,7 +35,8 @@ export const ExperienceStatement = styled.li`
     &::before {
         content: "▻ ";
         color: #66fcf1;
-
+    }
+    
     @media screen and (max-width: 800px) {
         font-size: 18px;
     }

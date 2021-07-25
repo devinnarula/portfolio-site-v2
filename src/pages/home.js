@@ -6,6 +6,7 @@ import About from '../components/AboutSection/about'
 import Projects from '../components/ProjectsSection/projects'
 import Experience from '../components/ExperienceSection/experience'
 import Contact from '../components/ContactSection/contact'
+import Footer from '../components/Footer/footer'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,13 +17,14 @@ const Home = () => {
 
     return (
         <>
-           <Sidebar isOpen={isOpen} toggle={toggle}/>
-           <Navbar toggle={toggle}/>
-           <Start/>
-           <About id='about'/>
-           <Experience id='experience'/>
-           <Projects id='projects'/>
-           <Contact id='contact'/>
+            <Sidebar isOpen={isOpen} toggle={toggle}/>
+            <Navbar toggle={toggle}/>
+            <Start/>
+            <About id='about'/>
+            <Experience id='experience'/>
+            <Projects id='projects'/>
+            <Contact id='contact'/>
+            <Footer/>
         </>
     )
 }

@@ -1,7 +1,7 @@
 export const BlackbaudOne = {
     dateLocation: 'May 2021 - August 2021, Charleston, SC',
     statements: [
-        'Used Angular to develop a web page to display information and created forms and functionality to manipulate this information',
+        'Used Angular to develop a web page which displays information and created forms and functionality to manipulate this information',
         'Communicated with various teams and project managers to research additional public API endpoints based on customer needs',
         'Created new API endpoints in c# and rigorously tested the endpoints for release to customers'
     ]

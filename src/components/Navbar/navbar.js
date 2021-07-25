@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
                             <NavLink to="contact" spy={true} smooth={true} offset={-85} duration={500}>Contact</NavLink>
                         </NavItem>
                         <NavBtn>
-                            <NavBtnLink to='/resume'>Resume</NavBtnLink>
+                            <NavBtnLink to={{pathname: 'https://drive.google.com/file/d/1gnTbWk2aFYIm_Yx72NZksM1M-a-pd-rL/view?usp=sharing'}} target='_blank'>Resume</NavBtnLink>
                         </NavBtn>
                     </NavMenu>
                 </NavbarContainer>
