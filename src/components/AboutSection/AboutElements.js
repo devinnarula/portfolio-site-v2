@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
     padding: 0 30px;
     position: relative;
     z-index: 1;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 `;
 
 export const AboutText = styled.div`

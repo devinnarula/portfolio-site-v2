@@ -10,14 +10,9 @@ export const ExperienceContainer = styled.div`
     padding: 0 30px;
     position: relative;
     z-index: 1;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 `;
 
-export const ExperienceText = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-`;
 
 export const ExperienceTitle = styled.div`
     display: flex;
@@ -30,7 +25,7 @@ export const ExperienceTitleName = styled.h1`
     color: #66fcf1;
     margin-left: 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         font-size: 25px;
         margin-left: 20px;
     }
@@ -41,18 +36,29 @@ export const ExperienceSectionLine = styled.hr`
     width: 700px;
     opacity: 0.4;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
+        width: 400px;
+    }
+
+    @media screen and (max-width: 800px) {
         width: 160px;
     }
 `;
 
-export const ExperienceItems = styled.div`
+export const CompaniesContainer = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const ExperienceList = styled.div`
     display: flex;
-    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
 `;
 
 export const ExperienceCompany = styled.button`
@@ -74,35 +80,53 @@ export const ExperienceCompany = styled.button`
         border: ${(props) => props.active ? '3px solid #66fcf1' : '3px solid #45A29E'};
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 170px;
         font-size: 16px;
     }
 `;
 
+
 export const CompanyDetails = styled.div`
     background: #1f2833;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
-    width: 100%;
     position: relative;
     z-index: 1;
+    width: 80%;
+
+    @media screen and (max-width: 800px) {
+        width: auto;
+    }
+`;
+
+export const CompanyText = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    @media screen and (max-width: 800px) {
+        align-self: center;
+        width: 100%;
+    }
 `;
 
 export const CompanyTitle = styled.h1`
     font-size: 40px;
     color: #66fcf1;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 30px;
+    }
 `;
 
 export const CompanyImgContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    width: 40%;
+    width: 30%;
     flex-direction: column;
 
     @media screen and (max-width: 800px) {
@@ -116,6 +140,7 @@ export const CompanyImg = styled.img`
     width: 75%;
     border-radius: 50%;
     border: 2px solid #66fcf1;
+    background-color: transparent;
 
     @media screen and (max-width: 800px) {
         height: 75%;

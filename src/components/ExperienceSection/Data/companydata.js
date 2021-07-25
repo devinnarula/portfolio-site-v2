@@ -10,7 +10,7 @@ export const Blackbaud = {
         BlackbaudOne,
         BlackbaudTwo
     ],
-    picture: {BlackbaudImg}
+    picture: BlackbaudImg
 }
 
 export const Clemson = {
@@ -19,7 +19,7 @@ export const Clemson = {
     experiences: [
         TeachingAssistant
     ],
-    picture: {ClemsonImg}
+    picture: ClemsonImg
 }
 
 export const ClemsonHonors = {
@@ -28,5 +28,5 @@ export const ClemsonHonors = {
     experiences: [
         Researcher
     ],
-    picture: {ClemsonHonorsImg}
+    picture: ClemsonHonorsImg
 }
