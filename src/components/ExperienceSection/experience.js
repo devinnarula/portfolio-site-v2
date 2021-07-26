@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Blackbaud, Clemson, ClemsonHonors } from './Data/companydata'
-import { ExperienceContainer, ExperienceTitle, ExperienceTitleName, ExperienceSectionLine, CompaniesContainer, ExperienceList, ExperienceCompany, CompanyText, CompanyDetails, CompanyTitle, CompanyImgContainer, CompanyImg } from './ExperienceElements'
+import { ExperienceContainer, ExperienceTitle, ExperienceTitleName, ExperienceSectionLine, CompaniesContainer, ExperienceList, ExperienceCompany, CompanyText, CompanyDetails, CompanyTitle, JobTitle, CompanyImgContainer, CompanyImg } from './ExperienceElements'
 import ExperienceInfo from './ExperienceInfo/experienceinfo'
 import { ThemeProvider } from 'styled-components'
 
@@ -26,6 +26,7 @@ const Experience = ({colorScheme, id}) => {
                     <CompanyDetails>
                         <CompanyText>
                             <CompanyTitle>{data.company}</CompanyTitle>
+                            <JobTitle>{data.title}</JobTitle>
                             {data.experiences.map((ex) => (
                                 <ExperienceInfo colorScheme={colorScheme} {...ex}/>
                             ))}

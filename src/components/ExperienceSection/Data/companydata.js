@@ -6,6 +6,7 @@ import ClemsonHonorsImg from '../../../images/ClemsonHonors.jpeg'
 export const Blackbaud = {
     id: 'Blackbaud',
     company: 'Blackbaud Inc.',
+    title: 'Software Engineering Intern',
     experiences: [
         BlackbaudOne,
         BlackbaudTwo
@@ -16,6 +17,7 @@ export const Blackbaud = {
 export const Clemson = {
     id: 'Clemson',
     company: 'Clemson University',
+    title: 'Undergraduate Teaching Assistant',
     experiences: [
         TeachingAssistant
     ],
@@ -25,6 +27,7 @@ export const Clemson = {
 export const ClemsonHonors = {
     id: 'ClemsonHonors',
     company: 'Clemson University Honors College',
+    title: 'Researcher',
     experiences: [
         Researcher
     ],

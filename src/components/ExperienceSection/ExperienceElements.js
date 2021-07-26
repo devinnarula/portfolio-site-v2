@@ -126,6 +126,16 @@ export const CompanyTitle = styled.h1`
     }
 `;
 
+export const JobTitle = styled.h1`
+    font-size: 30px;
+    color: ${props => props.theme.maintext};
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 25px;
+    }
+`;
+
 export const CompanyImgContainer = styled.div`
     display: flex;
     width: 30%;
