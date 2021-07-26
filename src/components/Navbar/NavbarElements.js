@@ -26,10 +26,11 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLeft = styled(LinkR)`
     color: ${props => props.theme.maintext};
     justify-self: flex-start;
-    cursor: pointer;
+    width: 20%;
+    justify-content: space-between;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -37,8 +38,26 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
 `;
 
-export const NavImg = styled.img`
-    height: 40px;
+export const NavLogo = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 4px solid;
+    border-color: ${props => props.theme.bold};
+    color: ${props => props.theme.bold};
+`
+
+export const LogoLink = styled(LinkS)`
+    color: ${props => props.theme.bold};
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
 `;
 
 export const MobileIcon = styled.div`
@@ -109,5 +128,43 @@ export const NavBtnLink = styled(LinkR)`
     &:hover {
         transition: all 0.2s ease-in-out;
         border: 2px solid ${props => props.theme.maintext};
+    }
+`;
+
+export const NavColorBtn = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 200px;
+    border-radius: 20px;
+    white-space: nowrap;
+    padding: 3px 22px;
+    border: 2px solid ${props => props.theme.link};
+    color: ${props => props.theme.maintext};
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        border: 3px solid ${props => props.theme.bold};
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 160px;
+        font-size: 16px;
+    }
+`;
+
+export const ColorIcon = styled.div`
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
     }
 `;

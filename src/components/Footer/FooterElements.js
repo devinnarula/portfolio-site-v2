@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.nav`
+    background: ${props => props.theme.background};
     height: 30px;
     display: flex;
     justify-content: center;

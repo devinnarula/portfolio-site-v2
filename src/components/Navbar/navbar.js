@@ -1,18 +1,27 @@
 import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
-import {Nav, NavLogo, NavImg, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink} from './NavbarElements'
+import { IoColorPalette } from 'react-icons/io5'
+import {Nav, NavLeft, NavLogo, LogoLink, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink, NavColorBtn, ColorIcon} from './NavbarElements'
 import Logo from '../../images/Logo.png'
 import { ThemeProvider } from 'styled-components'
 
-const Navbar = ({colorScheme, toggleOpen}) => {
+const Navbar = ({colorScheme, toggleOpen, toggleColor}) => {
     return (
         <>
         <ThemeProvider theme={colorScheme}>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>
-                        <NavImg src={Logo} alt="Logo"/>
-                    </NavLogo>
+                    <NavLeft>
+                        <NavLogo>
+                            <LogoLink to='/' spy={true} smooth={true} offset={-85} duration={500}>DN</LogoLink>
+                        </NavLogo>
+                        <NavColorBtn onClick={toggleColor}>
+                        Switch Colors
+                        <ColorIcon>
+                            <IoColorPalette/>
+                        </ColorIcon>
+                    </NavColorBtn>
+                    </NavLeft>
                     <MobileIcon onClick={toggleOpen}>
                         <RiMenu3Fill />
                     </MobileIcon>

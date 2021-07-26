@@ -11,7 +11,7 @@ export const StartContainer = styled.div`
     width: 100%;
     position: relative;
     z-index: 1;
-    margin-bottom: 15%;
+    padding-bottom: 15%;
 `;
 
 export const StartText = styled.div`

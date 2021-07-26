@@ -18,7 +18,7 @@ const About = ({colorScheme, id}) => {
                         </AboutParagraph>
                         <AboutParagraph>    
                             Programming is my passion, but I'm interested in many other things to! Complex mathematics and logic fascinates me and I love the broad applications in both code and other areas of life. I also enjoy thinking about the business applications of what I create and other parts the design process. I love to code, but I find it important to think about the other aspects of creating high quality software!
-                        </AboutParagraph>'
+                        </AboutParagraph>
                 </AboutText>
                 <AboutSkillTitle>Familiar Technologies</AboutSkillTitle>
 

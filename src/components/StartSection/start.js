@@ -4,10 +4,10 @@ import { GrGithub, GrLinkedin, GrInstagram, GrFacebook } from 'react-icons/gr'
 import Profile from '../../images/Profile.jpg'
 import { ThemeProvider } from 'styled-components'
 
-const Start = ({colorScheme}) => {
+const Start = ({colorScheme, id}) => {
     return (
         <ThemeProvider theme={colorScheme}>
-            <StartContainer>
+            <StartContainer  id={id}>
                 <StartImgContainer>
                     <StartImg src={Profile} alt="Profile Picture"/>
                 </StartImgContainer>
