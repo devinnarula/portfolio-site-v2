@@ -86,8 +86,13 @@ export const ContactSubject = styled.input`
     font-size: 20px;
     background: ${props => props.theme.maintext};
     padding: 5px;
+
     &:focus {
         outline: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 85%
     }
 `;
 
@@ -103,6 +108,10 @@ export const ContactMessage = styled.textarea`
     &:focus {
         outline: 0;
     }
+
+    @media screen and (max-width: 768px) {
+        width: 90%
+    }
 `;
 
 export const EmailButton = styled.a`
@@ -116,7 +125,7 @@ export const EmailButton = styled.a`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     margin-top: 10px;
-    
+
     &:hover {
         transition: all 0.2s ease-in-out;
         border: 3px solid ${props => props.theme.bold};
