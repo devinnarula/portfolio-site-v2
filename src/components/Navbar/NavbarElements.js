@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
 `;
 
-export const NavLeft = styled(LinkR)`
+export const NavLeft = styled.div`
     color: ${props => props.theme.maintext};
     justify-self: flex-start;
     width: 20%;
@@ -112,6 +112,11 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
+`;
+
+export const NavHomeBtn = styled.nav`
+    display: flex;
+    align-items: center;
 `;
 
 export const NavBtnLink = styled(LinkR)`

@@ -1,8 +1,7 @@
 import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { IoColorPalette } from 'react-icons/io5'
-import {Nav, NavLeft, NavLogo, LogoLink, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink, NavColorBtn, ColorIcon} from './NavbarElements'
-import Logo from '../../images/Logo.png'
+import {Nav, NavLeft, NavLogo, LogoLink, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLink, NavBtn, NavBtnLink, NavColorBtn, ColorIcon, NavHomeLink} from './NavbarElements'
 import { ThemeProvider } from 'styled-components'
 
 const Navbar = ({colorScheme, toggleOpen, toggleColor}) => {

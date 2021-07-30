@@ -13,17 +13,7 @@ export const FeaturedProjectContainer = styled.div`
     margin: 30px;
 
     @media screen and (max-width: 768px) {
-        width: 600px;
-        flex-direction: column;
-    }
-
-    @media screen and (max-width: 600px) {
-        width: 400px;
-        flex-direction: column;
-    }
-
-    @media screen and (max-width: 400px) {
-        width: 200px;
+        width: 100%;
         flex-direction: column;
     }
 `;
@@ -31,10 +21,10 @@ export const FeaturedProjectContainer = styled.div`
 export const LeftSide = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 `;
@@ -42,10 +32,10 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 `;
@@ -85,7 +75,6 @@ export const FeaturedSkills = styled.div`
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
 `;
 
 export const FeaturedSkill = styled.h1`
@@ -104,9 +93,6 @@ export const FeaturedSkill = styled.h1`
 export const FeaturedButtons = styled.div`
     display: flex;
     margin-top: 20px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
 `;
 
 export const FeaturedLink = styled(LinkR)`

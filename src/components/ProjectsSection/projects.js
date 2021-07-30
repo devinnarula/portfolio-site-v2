@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectsContainer, ProjectsText, ProjectsTitle, ProjectsTitleName, ProjectsSectionLine, ProjectsInfoContainer, ProjectSubtitle } from './ProjectsElements'
+import { ProjectsContainer, ProjectsText, ProjectsTitle, ProjectsTitleName, ProjectsSectionLine, ProjectsInfoContainer, ProjectsSubtitle, ProjectsMoreLink } from './ProjectsElements'
 import { ThemeProvider } from 'styled-components'
 import { ShapeWorld, Symptobot, LetsDraw, PortfolioV1, PortfolioV2, Puddle, ZigZagDodge, AlexaCanvas, Thesis, SwarmRobotics } from './Data/projectdata'
 import FeaturedProjectInfo from './FeaturedProjectsInfo/featured'
@@ -17,14 +17,11 @@ const Projects = ({colorScheme, id}) => {
                     </ProjectsTitle>
                 </ProjectsText>
                 <ProjectsInfoContainer>
-                    <ProjectSubtitle>Featured Projects</ProjectSubtitle>
+                    <ProjectsSubtitle>Featured Projects</ProjectsSubtitle>
                         {featuredProjects.map((p) => (
                             <FeaturedProjectInfo colorScheme={colorScheme} {...p}/>
                         ))}
-                    <ProjectSubtitle>More Projects</ProjectSubtitle>
-                        {/* {otherProjects.map((p) => (
-                            <OtherProjectInfo colorScheme={colorScheme} {...p}/>
-                        ))} */}
+                    <ProjectsMoreLink to='/projects'>More Projects</ProjectsMoreLink>
                 </ProjectsInfoContainer>
             </ProjectsContainer>
         </ThemeProvider>
