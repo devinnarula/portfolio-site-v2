@@ -45,3 +45,19 @@ export const ProjectsSectionLine = styled.hr`
         width: 160px;
     }
 `;
+
+export const ProjectsInfoContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+`;
+
+export const ProjectSubtitle = styled.h1`
+    font-size: 30px;
+    color: ${props => props.theme.maintext};
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+`;
