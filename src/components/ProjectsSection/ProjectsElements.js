@@ -49,6 +49,7 @@ export const ProjectsSectionLine = styled.hr`
 export const ProjectsInfoContainer = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 `;
 

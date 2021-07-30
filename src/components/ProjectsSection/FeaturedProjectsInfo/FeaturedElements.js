@@ -14,10 +14,17 @@ export const FeaturedProjectContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 600px;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 400px;
+        flex-direction: column;
     }
 
     @media screen and (max-width: 400px) {
         width: 200px;
+        flex-direction: column;
     }
 `;
 
@@ -26,6 +33,10 @@ export const LeftSide = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 `;
 
 export const RightSide = styled.div`
@@ -33,26 +44,37 @@ export const RightSide = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 `;
 
 export const FeaturedTitle = styled.h1`
-    font-size: 25px;
-    color: ${props => props.theme.maintext};
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 768px) {
-        font-size: 18px;
+        font-size: 25px;
+        margin-top: 20px;
     }
 `;
 
 export const FeaturedImg = styled.img`
-    height: 75%;
-    max-width: 75%;
+    height: 80%;
+    max-width: 80%;
     border-radius: 20%;
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
 export const FeaturedDescription = styled.p`
     font-size: 20px;
     color: ${props => props.theme.maintext};
+    white-space: pre-wrap;
 
     @media screen and (max-width: 768px) {
         font-size: 15px;
@@ -82,35 +104,30 @@ export const FeaturedSkill = styled.h1`
 export const FeaturedButtons = styled.div`
     display: flex;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
 `;
 
 export const FeaturedLink = styled(LinkR)`
-    font-size: 30px;
+    font-size: 35px;
     color: ${props => props.theme.maintext};
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
+    
     &:hover {
         transition: all 0.2s ease-in-out;
-        font-size: 32px;
+        color: ${props => props.theme.link};
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 20px;
-
-        &:hover {
-            transition: all 0.2s ease-in-out;
-            font-size: 22px;
-        }
+        font-size: 25px;
     }
 `;
 
 export const LinkIcon = styled.div`
-    font-size: 30px;
-    margin: 10px;
+    margin-right: 20px;
     
     @media screen and (max-width: 768px) {
         font-size: 20px;

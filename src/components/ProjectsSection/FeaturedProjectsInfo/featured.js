@@ -7,10 +7,10 @@ const FeaturedProjectInfo = ({colorScheme, id, title, picture, description, skil
         <ThemeProvider theme={colorScheme}>
             <FeaturedProjectContainer id={id}>
                 <LeftSide>
-                    <FeaturedTitle>{title}</FeaturedTitle>
                     <FeaturedImg src={picture} alt="Project Picture"/>
                 </LeftSide>
                 <RightSide>
+                    <FeaturedTitle>{title}</FeaturedTitle>
                     <FeaturedDescription>{description}</FeaturedDescription>
                     <FeaturedSkills>
                         {skills.map((s) => (
@@ -19,7 +19,7 @@ const FeaturedProjectInfo = ({colorScheme, id, title, picture, description, skil
                     </FeaturedSkills>
                     <FeaturedButtons>
                         {buttons.map((b) => (
-                            <FeaturedLink to={{pathname: b.url}} target="_blank"><LinkIcon>{b.icon}</LinkIcon></FeaturedLink>
+                            <FeaturedLink to={{pathname: b.url}} target="_blank"><LinkIcon>{b.icon()}</LinkIcon></FeaturedLink>
                         ))}
                     </FeaturedButtons>
                 </RightSide>
