@@ -17,7 +17,7 @@ const Start = ({colorScheme, id}) => {
                     </StartTitleContainer>
                     <StartSubTitle>I like to <BlueWord>code</BlueWord>.</StartSubTitle>
                     <StartSummary>
-                        I'm a student and <BlueWord>software engineer</BlueWord> who loves desining, coding, and building great technology. Currently, I'm working towards bachelor's degrees in <BlueWord>Computer Science</BlueWord> and <BlueWord>Mathematics</BlueWord> from Clemson University.
+                        I'm a student and <BlueWord>software engineer</BlueWord> who loves designing, coding, and building great technology. Currently, I'm working towards bachelor's degrees in <BlueWord>Computer Science</BlueWord> and <BlueWord>Mathematics</BlueWord> from Clemson University.
                     </StartSummary>
                     <StartLinks>
                         <StartLink to={{pathname: 'https://github.com/devinnarula'}} target="_blank">

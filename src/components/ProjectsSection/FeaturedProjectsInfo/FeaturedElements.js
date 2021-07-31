@@ -10,10 +10,11 @@ export const FeaturedProjectContainer = styled.div`
     align-items: center;
     padding: 20px 30px;
     width: 800px;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 800px) {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
     }
 `;

@@ -9,8 +9,9 @@ export const AllProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 1000;
     padding-bottom: 20%;
+    width: 100%;
 `;
 
 export const ProjectsTitle = styled.h1`
