@@ -79,7 +79,7 @@ export const PortfolioV1 = {
     buttons: [
         {
             icon: IoOpenOutline,
-            url: 'https://devinnarula.com/'
+            url: 'https://devinnarula-v1.netlify.app/'
         },
         {
             icon: FaGithub,
