@@ -43,6 +43,10 @@ export const ExperienceSectionLine = styled.hr`
     @media screen and (max-width: 800px) {
         width: 160px;
     }
+
+    @media screen and (max-width: 400px) {
+        width: 100px;
+    }
 `;
 
 export const CompaniesContainer = styled.div`

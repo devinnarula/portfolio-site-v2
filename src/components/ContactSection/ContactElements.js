@@ -41,8 +41,12 @@ export const ContactSectionLine = styled.hr`
     width: 700px;
     opacity: 0.4;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 160px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100px;
     }
 `;
 
@@ -60,6 +64,16 @@ export const ContactPrompt = styled.p`
 
     @media screen and (max-width: 480px) {
         font-size: 16px;
+    }
+`;
+
+export const EmailLink = styled.a`
+    color: ${props => props.theme.link};
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: ${props => props.theme.bold};
     }
 `;
 

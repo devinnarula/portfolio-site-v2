@@ -181,7 +181,7 @@ export const Thesis = {
 }
 
 export const SwarmRobotics = {
-    title: 'Thesis: Serious Gaming',
+    title: 'Swarm Robotics',
     picture: SwarmRoboticsImg,
     description: 'I worked with 3 other students and a graduate student to research swarm robotics and methods of localization. I created and algorithm to locate a robot relative to a sound source.',
     skills: [

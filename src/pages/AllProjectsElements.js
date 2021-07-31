@@ -8,7 +8,6 @@ export const AllProjectsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
     position: relative;
     z-index: 1;
     padding-bottom: 20%;

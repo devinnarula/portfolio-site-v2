@@ -41,8 +41,12 @@ export const AboutSectionLine = styled.hr`
     width: 700px;
     opacity: 0.4;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 160px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100px;
     }
 `;
 

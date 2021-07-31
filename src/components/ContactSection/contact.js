@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { ContactContainer, ContactText, ContactTitle, ContactTitleName, ContactSectionLine, ContactPrompt, ContactForm, ContactCaption, ContactSubject, ContactMessage, EmailButton } from './ContactElements'
+import { ContactContainer, ContactText, ContactTitle, ContactTitleName, ContactSectionLine, ContactPrompt, ContactForm, ContactCaption, ContactSubject, ContactMessage, EmailButton, EmailLink } from './ContactElements'
 import { ThemeProvider } from 'styled-components'
 
 const Contact = ({colorScheme, id}) => {
@@ -23,7 +23,7 @@ const Contact = ({colorScheme, id}) => {
                         <ContactSectionLine/><ContactTitleName>Contact</ContactTitleName>
                     </ContactTitle>
                     <ContactPrompt>
-                        Please feel free to contact me with about questions about code, employment opprotunities, or really anything! My inbox (devin.j.narula@gmail.com) is open and I'll back to you as soon as I can!
+                        Please feel free to contact me with about questions about code, employment opprotunities, or really anything! My inbox (<EmailLink href={`mailto:devin.j.narula@gmail.com`}>devin.j.narula@gmail.com</EmailLink>) is open and I'll back to you as soon as I can!
                     </ContactPrompt>
                 </ContactText>
                 <ContactForm>

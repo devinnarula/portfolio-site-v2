@@ -42,7 +42,7 @@ function App() {
             <Route
               path="/projects"
               render={() => (
-              <AllProjects colorScheme={colors[colorScheme]}/>
+                <AllProjects colorScheme={colors[colorScheme]}/>
               )}
               exact
             />

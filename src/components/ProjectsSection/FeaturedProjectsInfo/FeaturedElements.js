@@ -12,7 +12,7 @@ export const FeaturedProjectContainer = styled.div`
     width: 800px;
     margin: 30px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 100%;
         flex-direction: column;
     }
@@ -24,7 +24,8 @@ export const LeftSide = styled.div`
     align-items: flex-start;
     width: 50%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
+        align-items: center;
         width: 100%;
     }
 `;
@@ -35,7 +36,7 @@ export const RightSide = styled.div`
     align-items: flex-start;
     width: 50%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 100%;
     }
 `;
@@ -45,19 +46,20 @@ export const FeaturedTitle = styled.h1`
     color: #fff;
     margin-bottom: 10px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         font-size: 25px;
         margin-top: 20px;
     }
 `;
 
 export const FeaturedImg = styled.img`
-    height: 80%;
+    height: 300px;
     max-width: 80%;
     border-radius: 20%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 80%;
+        height: auto;
     }
 `;
 
@@ -66,7 +68,7 @@ export const FeaturedDescription = styled.p`
     color: ${props => props.theme.maintext};
     white-space: pre-wrap;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         font-size: 15px;
     }
 `;
@@ -84,7 +86,7 @@ export const FeaturedSkill = styled.h1`
     margin-right: 20px;
     margin-top: 15px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         font-size: 14px;
     }
 `;
