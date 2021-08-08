@@ -19,16 +19,16 @@ const Experience = ({colorScheme, id}) => {
                 </ExperienceTitle>
                 <CompaniesContainer>
                     <ExperienceList>
-                        <ExperienceCompany active={data.id==='Blackbaud'} onClick={() => toggleCompany(Blackbaud)}>Blackbaud</ExperienceCompany>
-                        <ExperienceCompany active={data.id==='Clemson'} onClick={() => toggleCompany(Clemson)}>Clemson</ExperienceCompany>
-                        <ExperienceCompany active={data.id==='ClemsonHonors'} onClick={() => toggleCompany(ClemsonHonors)}>Clemson Honors</ExperienceCompany>
+                        <ExperienceCompany key={'Blackbaud'} active={data.id==='Blackbaud'} onClick={() => toggleCompany(Blackbaud)}>Blackbaud</ExperienceCompany>
+                        <ExperienceCompany key={'Clemson'} active={data.id==='Clemson'} onClick={() => toggleCompany(Clemson)}>Clemson</ExperienceCompany>
+                        <ExperienceCompany key={'ClemsonHonors'} active={data.id==='ClemsonHonors'} onClick={() => toggleCompany(ClemsonHonors)}>Clemson Honors</ExperienceCompany>
                     </ExperienceList>
                     <CompanyDetails>
                         <CompanyText>
                             <CompanyTitle>{data.company}</CompanyTitle>
                             <JobTitle>{data.title}</JobTitle>
-                            {data.experiences.map((ex) => (
-                                <ExperienceInfo colorScheme={colorScheme} {...ex}/>
+                            {data.experiences.map((ex, index) => (
+                                <ExperienceInfo key={index} colorScheme={colorScheme} {...ex}/>
                             ))}
                         </CompanyText>
                         <CompanyImgContainer>

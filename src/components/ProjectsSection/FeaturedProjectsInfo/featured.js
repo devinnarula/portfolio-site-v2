@@ -13,13 +13,13 @@ const FeaturedProjectInfo = ({colorScheme, id, title, picture, description, skil
                     <FeaturedTitle>{title}</FeaturedTitle>
                     <FeaturedDescription>{description}</FeaturedDescription>
                     <FeaturedSkills>
-                        {skills.map((s) => (
-                            <FeaturedSkill>{s}</FeaturedSkill>
+                        {skills.map((s, index) => (
+                            <FeaturedSkill key={index}>{s}</FeaturedSkill>
                         ))}
                     </FeaturedSkills>
                     <FeaturedButtons>
-                        {buttons.map((b) => (
-                            <FeaturedLink to={{pathname: b.url}} target="_blank"><LinkIcon>{b.icon()}</LinkIcon></FeaturedLink>
+                        {buttons.map((b, index) => (
+                            <FeaturedLink key={index} to={{pathname: b.url}} target="_blank"><LinkIcon>{b.icon()}</LinkIcon></FeaturedLink>
                         ))}
                     </FeaturedButtons>
                 </RightSide>

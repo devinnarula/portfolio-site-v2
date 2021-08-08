@@ -12,8 +12,8 @@ const AllProjects = ({colorScheme}) => {
                 <AllProjectsContainer>
                     <ProjectsTitle>Projects</ProjectsTitle>
                     <ProjectsHomeLink to='/'>Back to Home</ProjectsHomeLink>
-                    {projects.map((p) => (
-                        <FeaturedProjectInfo colorScheme={colorScheme} {...p}/>
+                    {projects.map((p, index) => (
+                        <FeaturedProjectInfo key={index} colorScheme={colorScheme} {...p}/>
                     ))}
                     <ProjectsHomeLink to='/'>Back to Home</ProjectsHomeLink>
                 </AllProjectsContainer>

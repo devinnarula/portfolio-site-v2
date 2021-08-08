@@ -16,8 +16,8 @@ const Projects = ({colorScheme, id}) => {
                 </ProjectsText>
                 <ProjectsInfoContainer>
                     <ProjectsSubtitle>Featured Projects</ProjectsSubtitle>
-                        {featuredProjects.map((p) => (
-                            <FeaturedProjectInfo colorScheme={colorScheme} {...p}/>
+                        {featuredProjects.map((p, index) => (
+                            <FeaturedProjectInfo key={index} colorScheme={colorScheme} {...p}/>
                         ))}
                     <ProjectsMoreLink to='/projects'>More Projects</ProjectsMoreLink>
                 </ProjectsInfoContainer>

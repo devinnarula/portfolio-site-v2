@@ -86,7 +86,7 @@ export const ContactForm = styled.form`
     width: 100%;
 `;
 
-export const ContactCaption = styled.caption`
+export const ContactCaption = styled.div`
     color: ${props => props.theme.bold};
     font-size: 20px;
     margin-bottom: 5px;

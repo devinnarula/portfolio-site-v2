@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Start from '../components/StartSection/start'
 import About from '../components/AboutSection/about'
 import Projects from '../components/ProjectsSection/projects'

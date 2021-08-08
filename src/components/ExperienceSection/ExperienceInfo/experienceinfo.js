@@ -8,8 +8,8 @@ const ExperienceInfo = ({colorScheme, dateLocation, statements}) => {
             <ExperienceContainer>
                 <ExperienceDateLocation>{dateLocation}</ExperienceDateLocation>
                 <ExperienceStatementList>
-                    {statements.map((s) => (
-                        <ExperienceStatement>{s}</ExperienceStatement>
+                    {statements.map((s, index) => (
+                        <ExperienceStatement key={index}>{s}</ExperienceStatement>
                     ))}
                 </ExperienceStatementList>
             </ExperienceContainer>
