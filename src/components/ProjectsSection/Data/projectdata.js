@@ -3,6 +3,7 @@ import { IoOpenOutline } from 'react-icons/io5'
 import ShapeWorldImg from '../../../images/Shapeworld.png'
 import SymptobotImg from '../../../images/Symptobot.png'
 import LetsDrawImg from '../../../images/Letsdraw.png'
+import Sudoku from '../../../images/Sudoku.png'
 import PortfolioImg from '../../../images/Profile.jpg'
 import PuddleImg from '../../../images/Puddle.png'
 import ZigZagDodgeImg from '../../../images/Zigzagdodge.png'
@@ -63,6 +64,29 @@ export const LetsDraw = {
         {
             icon: FaGithub,
             url: 'https://github.com/devinnarula/painting-site'
+        }
+    ]
+}
+
+export const SudokuSolver = {
+    title: 'Sudoku Solver',
+    picture: Sudoku,
+    description: 'This website implements a recursive backtracing algorithm in python to solve a sudoku board. In the future I plan to add functionality to play an actual game as well as add other algorithms to optimize performance.',
+    skills: [
+        'Python',
+        'Flask',
+        'React',
+        'Javascript',
+        'HTML/CSS'
+    ],
+    buttons: [
+        {
+            icon: IoOpenOutline,
+            url: 'https://sudoku-solver-site.netlify.app/'
+        },
+        {
+            icon: FaGithub,
+            url: 'https://github.com/devinnarula/sudoku-solver'
         }
     ]
 }
