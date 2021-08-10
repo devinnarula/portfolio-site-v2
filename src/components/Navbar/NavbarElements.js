@@ -1,6 +1,11 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+
+const fadein = keyframes`
+    from { opacity: 0 }
+    to { opacity: 100% }
+`
 
 export const Nav = styled.nav`
     background: ${props => props.theme.background};
@@ -11,12 +16,12 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    border-bottom: 1px dotted ${props => props.theme.border};
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
 `;
+
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,8 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
+    border-bottom: 1px dotted ${props => props.theme.border};
+    animation: ${fadein} 3s;
 `;
 
 export const NavLeft = styled.div`
