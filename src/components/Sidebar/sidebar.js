@@ -18,7 +18,7 @@ const Sidebar = ({colorScheme, isOpen, toggleOpen}) => {
                             <SidebarLink to="contact" spy={true} smooth={true} offset={-85} duration={500} onClick={toggleOpen}>Contact</SidebarLink>
                         </SidebarMenu>
                         <SideBtnWrap>
-                                <SidebarRoute to='/resume'>Resume</SidebarRoute>
+                                <SidebarRoute to={{pathname: 'https://drive.google.com/file/d/1gnTbWk2aFYIm_Yx72NZksM1M-a-pd-rL/view?usp=sharing'}} target='_blank'>Resume</SidebarRoute>
                         </SideBtnWrap>
                     </SidebarWrapper>
                 </SidebarContainer>
