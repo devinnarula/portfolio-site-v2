@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
 export const StartContainer = styled.div`
@@ -48,10 +48,16 @@ export const StartTitleContainer = styled.div`
     flex-direction: column;
 `;
 
+const fadein = keyframes`
+    from { opacity: 0 }
+    to { opacity: 100% }
+`
+
 export const StartTitleGreeting = styled.h1`
     color: ${props => props.theme.maintext};
     font-size: 48px;
     text-align: center;
+    animation: ${fadein} 2s;
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -70,11 +76,19 @@ export const BlueWord = styled.span`
     color: ${props => props.theme.bold};
 `;
 
+const fadein2 = keyframes`
+    0% { opacity: 0 }
+    50% { opacity: 0 }
+    100% { opacity: 100% }
+`
+
 export const StartSubTitle = styled.h1`
     align-self: flex-start;
     color: ${props => props.theme.maintext};
     font-size: 44px;
     text-align: center;
+    animation: 3.5s;
+    animation: ${fadein2} 4s;
 
     @media screen and (max-width: 768px) {
         font-size: 36px;
@@ -85,12 +99,19 @@ export const StartSubTitle = styled.h1`
     }
 `;
 
+const fadein3 = keyframes`
+    0% { opacity: 0 }
+    67% { opacity: 0 }
+    100% { opacity: 100% }
+`
+
 export const StartSummary = styled.p`
     align-self: flex-start;
     color: ${props => props.theme.maintext};
     font-size: 20px;
     text-align: start;
     max-width: 680px;
+    animation: ${fadein3} 6s;
 
     @media screen and (max-width: 768px) {
         font-size: 18px;
@@ -105,6 +126,7 @@ export const StartImg = styled.img`
     width: 75%;
     border-radius: 50%;
     border: 2px solid ${props => props.theme.bold};
+    animation: ${fadein3} 6s;
 
     @media screen and (max-width: 800px) {
         height: 75%;
@@ -117,6 +139,7 @@ export const StartLinks = styled.div`
     margin-top: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    animation: ${fadein3} 6s;
 `;
 
 export const StartLink = styled(LinkR)`
