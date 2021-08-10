@@ -1,4 +1,4 @@
-import { FaAppStoreIos, FaGithub } from 'react-icons/fa'
+import { FaAppStoreIos, FaGithub, FaYoutube } from 'react-icons/fa'
 import { IoOpenOutline } from 'react-icons/io5'
 import ShapeWorldImg from '../../../images/Shapeworld.png'
 import SymptobotImg from '../../../images/Symptobot.png'
@@ -22,6 +22,10 @@ export const ShapeWorld = {
         {
             icon: FaAppStoreIos,
             url: 'https://apps.apple.com/us/app/shape-world/id1515195756'
+        },
+        {
+            icon: FaYoutube,
+            url: 'https://www.youtube.com/watch?v=9i6Mln7P5Fc'
         }
     ]
 }
@@ -43,6 +47,10 @@ export const Symptobot = {
         {
             icon: FaGithub,
             url: 'https://github.com/devinnarula/Symptom-Checker-Site'
+        },
+        {
+            icon: FaYoutube,
+            url: 'https://www.youtube.com/watch?v=CxEstgBMcb8'
         }
     ]
 }
@@ -64,6 +72,10 @@ export const LetsDraw = {
         {
             icon: FaGithub,
             url: 'https://github.com/devinnarula/painting-site'
+        },
+        {
+            icon: FaYoutube,
+            url: 'https://www.youtube.com/watch?v=lQad1qnWssU'
         }
     ]
 }
@@ -87,6 +99,10 @@ export const SudokuSolver = {
         {
             icon: FaGithub,
             url: 'https://github.com/devinnarula/sudoku-solver'
+        },
+        {
+            icon: FaYoutube,
+            url: 'https://www.youtube.com/watch?v=FceeheUCGVE'
         }
     ]
 }
@@ -97,6 +113,7 @@ export const PortfolioV1 = {
     description: 'My initial portfolio website built with React. Though I like this site, I decided to move away from that design to this website.',
     skills: [
         'React',
+        'Gatsby',
         'Javascript',
         'HTML/CSS'
     ],

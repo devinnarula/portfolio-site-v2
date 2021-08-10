@@ -17,7 +17,7 @@ const About = ({colorScheme, id}) => {
                             Hi there! My name is Devin and I'm interested in everything to do with technology and coding. I excel at problem solving and believe I learn a lot through doing and creating new things. Currently I'm focused on broadening my technical skillset by experimenting with a variety of frontend and backend programming techniques and languages.
                         </AboutParagraph>
                         <AboutParagraph>    
-                            Programming is my passion, but I'm interested in many other things to! Complex mathematics and logic fascinates me and I love the broad applications in both code and other areas of life. I also enjoy thinking about the business applications of what I create and other parts the design process. I love to code, but I find it important to think about the other aspects of creating high quality software!
+                            Programming is my passion, but I'm interested in many other things too! Complex mathematics and logic fascinates me and I love the broad applications in both code and other areas of life. I also enjoy thinking about the business applications of what I create and other parts the design process. I love to code, but I find it important to think about the other aspects of creating high quality software!
                         </AboutParagraph>
                 </AboutText>
                 <AboutSkillTitle>Familiar Technologies</AboutSkillTitle>
