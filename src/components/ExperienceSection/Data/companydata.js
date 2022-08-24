@@ -1,7 +1,18 @@
-import { BlackbaudOne, BlackbaudTwo, TeachingAssistant, Researcher } from './experiencedata'
+import { BlackbaudOne, BlackbaudTwo, TeachingAssistant, Researcher, PFG } from './experiencedata'
 import BlackbaudImg from '../../../images/Blackbaud.png'
 import ClemsonImg from '../../../images/Clemson.png'
 import ClemsonHonorsImg from '../../../images/ClemsonHonors.jpeg'
+import PFGImg from '../../../images/PFG.jpeg'
+
+export const Principal = {
+    id: 'PFG',
+    company: 'Principal Financial Group',
+    title: 'Data Engineering Intern',
+    experiences: [
+        PFG
+    ],
+    picture: PFGImg
+}
 
 export const Blackbaud = {
     id: 'Blackbaud',

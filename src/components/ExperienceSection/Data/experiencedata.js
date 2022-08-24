@@ -1,3 +1,11 @@
+export const PFG = {
+    dateLocation: 'May 2022 - August 2022, Des Moines, IA',
+    statements: [
+        'Utilized AWS cloud services to move and transform on-premises data into the cloud',
+        'Created advanced SQL queries to perform exploratory analysis and discover business use cases for our data'
+    ]
+}
+
 export const BlackbaudOne = {
     dateLocation: 'May 2021 - August 2021, Charleston, SC',
     statements: [

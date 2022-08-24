@@ -1,8 +1,9 @@
 import React from 'react'
 import { AboutContainer, AboutText, AboutTitle, AboutTitleName, AboutSectionLine, AboutParagraph, AboutSkills, AboutSkillTitle, AboutSkill, SkillIcon } from './AboutElements'
 import { DiJava } from 'react-icons/di'
-import { SiJavascript, SiCsharp, SiFlask, SiCodio } from 'react-icons/si'
-import { FaSwift, FaPython, FaHtml5, FaCss3Alt, FaReact, FaAngular } from 'react-icons/fa'
+import { SiJavascript, SiCsharp, SiTypescript, SiCodio } from 'react-icons/si'
+import { FaSwift, FaPython, FaHtml5, FaCss3Alt, FaReact, FaAngular, FaDatabase, FaAws } from 'react-icons/fa'
+import { AiFillCloud } from 'react-icons/ai'
 import { ThemeProvider } from 'styled-components'
 
 const About = ({colorScheme, id}) => {
@@ -23,17 +24,20 @@ const About = ({colorScheme, id}) => {
                 <AboutSkillTitle>Familiar Technologies</AboutSkillTitle>
 
                 <AboutSkills>
-                    <AboutSkill><SkillIcon><SiCodio/></SkillIcon>C/C++</AboutSkill>
                     <AboutSkill><SkillIcon><DiJava/></SkillIcon>Java</AboutSkill>
-                    <AboutSkill><SkillIcon><FaSwift/></SkillIcon>Swift</AboutSkill>
-                    <AboutSkill><SkillIcon><FaPython/></SkillIcon>Python</AboutSkill>
-                    <AboutSkill><SkillIcon><SiCsharp/></SkillIcon>C#</AboutSkill>
                     <AboutSkill><SkillIcon><SiJavascript/></SkillIcon>JavaScript</AboutSkill>
-                    <AboutSkill><SkillIcon><FaHtml5/></SkillIcon>HTML</AboutSkill>
-                    <AboutSkill><SkillIcon><FaCss3Alt/></SkillIcon>CSS</AboutSkill>
                     <AboutSkill><SkillIcon><FaReact/></SkillIcon>React</AboutSkill>
                     <AboutSkill><SkillIcon><FaAngular/></SkillIcon>Angular</AboutSkill>
-                    <AboutSkill><SkillIcon><SiFlask/></SkillIcon>Flask</AboutSkill>
+                    <AboutSkill><SkillIcon><SiTypescript/></SkillIcon>TypeScript</AboutSkill>
+                    <AboutSkill><SkillIcon><SiJavascript/></SkillIcon>ExpressJS</AboutSkill>
+                    <AboutSkill><SkillIcon><SiCodio/></SkillIcon>C/C++</AboutSkill>
+                    <AboutSkill><SkillIcon><SiCsharp/></SkillIcon>C#</AboutSkill>
+                    <AboutSkill><SkillIcon><FaSwift/></SkillIcon>Swift</AboutSkill>
+                    <AboutSkill><SkillIcon><FaHtml5/></SkillIcon>HTML</AboutSkill>
+                    <AboutSkill><SkillIcon><FaCss3Alt/></SkillIcon>CSS</AboutSkill>
+                    <AboutSkill><SkillIcon><FaPython/></SkillIcon>Python</AboutSkill>
+                    <AboutSkill><SkillIcon><FaDatabase/></SkillIcon>SQL</AboutSkill>-
+                    <AboutSkill><SkillIcon><AiFillCloud/></SkillIcon>AWS</AboutSkill>-
                 </AboutSkills>
             </AboutContainer>
         </ThemeProvider>
